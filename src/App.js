@@ -2,8 +2,6 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 function Box() {
   return (
@@ -35,9 +33,12 @@ export default function App() {
         <p className="text-lg mb-6 max-w-xl mx-auto">
           I’m a passionate UI developer crafting modern, responsive interfaces and immersive user experiences using the latest web technologies.
         </p>
-        <Button className="text-lg px-6 py-3 rounded-2xl bg-pink-600 hover:bg-pink-500">
+        <a
+          href="#"
+          className="text-lg px-6 py-3 rounded-2xl bg-pink-600 hover:bg-pink-500 transition duration-300 inline-block"
+        >
           View Portfolio
-        </Button>
+        </a>
       </motion.div>
     </main>
   );
